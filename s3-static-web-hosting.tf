@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "main" {
-  bucket = "s3-demo-bucket"
+resource "aws_s3_bucket" "main1" {
+  bucket = "demo-static-hosting"
   acl    = "public-read"
   policy = "${file("policy.json")}"
 
