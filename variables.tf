@@ -1,7 +1,7 @@
 variable "s3_bucket_name" {
 
 type = "string"
-#default = "demo-static-hosting"
+default = "demo-static-hosting"
 description ="name of the s3 bucket"
 
   

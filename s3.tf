@@ -3,7 +3,8 @@ resource "aws_s3_bucket" "main" {
   acl    = "private"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
+    env =  "${lookup(var.s3_tags, "environment")}"
+    }
+
+  region= "${var.s3_regions[0]}"
 }
