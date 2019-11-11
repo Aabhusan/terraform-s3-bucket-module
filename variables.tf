@@ -22,10 +22,10 @@ locals {
 }  
 }
 
-variable "s3_regions" {
+variable "s3_region" {
 
-type = "list"
-default = ["ap-southeast-2","us-east-2"] 
+type = "string"
+#default = ["ap-southeast-2","us-east-2"] 
 
 }
 
