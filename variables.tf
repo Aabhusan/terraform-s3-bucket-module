@@ -1,5 +1,11 @@
-variable "s3_bucket_name" {
+variable "environment" {
+    type="string"
+    default="test"
+  
+}
 
+
+variable "s3_bucket_name" {
 type = "string"
 default = "demo-static-hosting"
 description ="name of the s3 bucket"
@@ -7,13 +13,10 @@ description ="name of the s3 bucket"
   
 }
 
-variable "s3_tags" {
-
-type = "map"
-description="tags given in the s3 bucket"
-default= {
+locals {
+  s3_tags= {
     created_by= "terraform"
-    environment = "test"
+    environment = "${var.environment}"
 
 
 }  
