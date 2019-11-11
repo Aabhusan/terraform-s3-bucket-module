@@ -5,10 +5,10 @@ variable "environment" {
 }
 
 
-variable "s3_bucket_name" {
+variable "s3_bucket_prefix" {
 type = "string"
-default = "demo-static-hosting"
-description ="name of the s3 bucket"
+#default = "demo-static-hosting"
+description ="prefix of the s3 bucket"
 
   
 }

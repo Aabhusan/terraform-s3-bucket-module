@@ -1,1 +1,1 @@
-s3_bucket_name="test-aabhusan"
+s3_bucket_prefix  = "test-aabhusan-1"
