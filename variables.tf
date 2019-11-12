@@ -7,7 +7,7 @@ variable "environment" {
 
 variable "s3_bucket_prefix" {
 type = "string"
-default = "test-aabhusan-1"
+#default = "test-aabhusan-1"
 description ="prefix of the s3 bucket"
 
   
@@ -25,7 +25,7 @@ locals {
 variable "s3_region" {
 
 type = "string"
-default = "us-east-1" 
+#default = "us-east-1" 
 
 }
 
